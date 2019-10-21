@@ -50,7 +50,7 @@ function crawlerModule3(feeds, concepts){
                 let conceptEntity = concepts[feed.key].entity;
                 for(let i=0 ; i < conceptEntity.length; i++){
                     let word = feedStatement.slice(conceptEntity[i].startIndex, conceptEntity[i].endIndex);
-                    console.log(' word ',i, ' ',word);
+                    console.log('entity word ',i, ' ',word);
                     let formatedWord = '<strong>'.concat(word).concat('</strong>');
                     formatedStatement = formatedStatement.replace(word,formatedWord);
                 }
@@ -60,7 +60,7 @@ function crawlerModule3(feeds, concepts){
                 let conceptTwitterUserName = concepts[feed.key].twitterUserName;
                 for(let i=0 ; i < conceptTwitterUserName.length; i++){
                     let word = feedStatement.slice(conceptTwitterUserName[i].startIndex, conceptTwitterUserName[i].endIndex);
-                    console.log(' word ',i, ' ',word);
+                    console.log(' twitterUserName word ',i, ' ',word);
                     //<ahref=”http://twitter.com/elversatile”>elversatile</a>
                     let formatedWord = `${word.charAt(0)} <a href="http://twitter.com/${word.slice(1,word.length)}">${word.slice(1,word.length)}</a>`;
                     formatedStatement = formatedStatement.replace(word,formatedWord);
@@ -71,7 +71,7 @@ function crawlerModule3(feeds, concepts){
                 let conceptHyperLink = concepts[feed.key].hyperLink;
                 for(let i=0 ; i < conceptHyperLink.length; i++){
                     let word = feedStatement.slice(conceptHyperLink[i].startIndex, conceptHyperLink[i].endIndex);
-                    console.log(' word ',i, ' ',word);
+                    console.log(' hyperLink word ',i, ' ',word);
                     let formatedWord = `<a href="${word}">${word}</a>`;
                     formatedStatement = formatedStatement.replace(word,formatedWord);
                 }
@@ -81,7 +81,7 @@ function crawlerModule3(feeds, concepts){
                 let conceptHashtag = concepts[feed.key].hashtag;
                 for(let i=0 ; i < conceptHashtag.length; i++){
                     let word = feedStatement.slice(conceptHashtag[i].startIndex, conceptHashtag[i].endIndex);
-                    console.log(' word ',i, ' ',word);
+                    console.log('hashtag word ',i, ' ',word);
                     let formatedWord = `${word.charAt(0)} <a href="http://twitter.com/hashtag/${word.slice(1,word.length)}">${word.slice(1,word.length)}</a>`;
                     formatedStatement = formatedStatement.replace(word,formatedWord);
                 }
