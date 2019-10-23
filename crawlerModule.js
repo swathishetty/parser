@@ -1,5 +1,5 @@
 console.log("*************** Crawler Module 3 **********************");
-var feedConcepts = require("./concepts");
+var feedConcepts = require("./feedConcepts/concepts");
 var module1Output = require("./inputs/moduleOneOutput");
 var module2Output = require("./inputs/moduleTwoOutput");
 
