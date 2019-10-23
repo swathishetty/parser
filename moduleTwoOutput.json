@@ -1,0 +1,21 @@
+{
+    "1": {
+      "entity": [
+        { "startIndex": 14, "endIndex": 22 },
+        { "startIndex": 0, "endIndex": 5 }
+      ],
+      "twitterUserName": [{ "startIndex": 55, "endIndex": 67 }],
+      "hyperLink": [{ "startIndex": 37, "endIndex": 54 }]
+    },
+    "2": {
+        "entity": [
+          { "startIndex": 14, "endIndex": 23 },
+          { "startIndex": 0, "endIndex": 5 }
+        ],
+        "twitterUserName": [{ "startIndex": 56, "endIndex": 68 }],
+        "hyperLink": [{ "startIndex": 38, "endIndex": 55 }],
+        "hashtag": [{ "startIndex": 69, "endIndex": 79 },
+                    { "startIndex": 80, "endIndex": 90 }
+                  ]
+      }
+}
